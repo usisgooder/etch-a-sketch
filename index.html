@@ -9,7 +9,19 @@
 
 <body>
     <div class="title">Etch-a-Sketch</div>
-    <div class="container"></div>
+    <div class="content">
+        <div class="settings">
+            <button onclick="resetGrid()">Clear</button>
+            <div class="dimension-display">16x16</div>
+            <div class="slidecontainer">
+                <input type="range" min="4" max="32" value="16" class="slider" id="dimension-slider">
+            </div>
+            <button onclick="resizeCanvas()">Set Canvas</button>
+        </div>
+        
+        <div class="canvas"></div>
+    </div>
+    
     <script src="scripts.js"></script>
 </body>
 

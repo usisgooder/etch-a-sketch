@@ -1,19 +1,47 @@
-.container {
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.canvas {
     border: 2px solid black;
     width: 500px;
     height: 500px;
     display: inline-grid;
+    margin: 50px 250px;
     grid-template: repeat(16, 1fr) / repeat(16, 1fr);
-    margin: auto;
 }
 
 .grid {
     display: inline-block;
-    width: 29.25px;
-    height: 29.25px;
-    border: 1px solid greenyellow;
-}
-
-.grid:active {
-    color: black;
+    /* width: 29.25px;
+    height: 29.25px; */
 }
