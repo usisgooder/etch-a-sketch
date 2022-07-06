@@ -1,0 +1,19 @@
+.container {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    display: inline-grid;
+    grid-template: repeat(16, 1fr) / repeat(16, 1fr);
+    margin: auto;
+}
+
+.grid {
+    display: inline-block;
+    width: 29.25px;
+    height: 29.25px;
+    border: 1px solid greenyellow;
+}
+
+.grid:active {
+    color: black;
+}
