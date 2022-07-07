@@ -3,25 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="title">Etch-a-Sketch</div>
+    <div class="title">Etch-a-Sketch<div id="subtitle">Draw something!</div></div>
     <div class="content">
         <div class="settings">
+            <div>
+                <label for="colorpicker">Color Picker:</label>
+                <input type="color" id="colorpicker" value="#0000ff">
+            </div>
             <button onclick="resetGrid()">Clear</button>
             <div class="dimension-display">16x16</div>
             <div class="slidecontainer">
-                <input type="range" min="4" max="32" value="16" class="slider" id="dimension-slider">
+                <input type="range" min="4" max="100" value="16" class="slider" id="dimension-slider">
             </div>
             <button onclick="resizeCanvas()">Set Canvas</button>
         </div>
         
         <div class="canvas"></div>
     </div>
-    
+    <div class="credit">Gan Jia Horng - The Odin Project 2022</div>
     <script src="scripts.js"></script>
 </body>
 
